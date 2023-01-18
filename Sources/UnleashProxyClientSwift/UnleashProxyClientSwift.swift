@@ -33,7 +33,7 @@ struct Context {
 
 
 @available(macOS 10.15, *)
-public class UnleashClient: ObservableObject {
+public class UnleashClient {
     public var context: [String: String] = [:]
     var timer: Timer?
     var poller: Poller

@@ -37,6 +37,10 @@ public class UnleashClient {
     public var context: [String: String] = [:]
     var timer: Timer?
     var poller: Poller
+    
+    public var toggles: [String: Toggle] {
+        return poller.toggles
+    }
 
     public init(unleashUrl: String, clientKey: String, refreshInterval: Int? = nil, appName: String? = nil, environment: String? = nil, poller: Poller? = nil) {
         self.context["appName"] = appName
